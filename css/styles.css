@@ -182,11 +182,14 @@
     border: 0;
 }
 
+
 .third-section {
+    padding: 120px 0;
     background-color: #F4F4FD;
 }
 
 .our-team {
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -196,16 +199,27 @@
 }
 
 .team-list {
-    list-style-type: none;
+    display: flex;
     justify-content: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .team-item {
+    width: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
 
+.member-container {
+    padding: 32px 0;
+}
+
 .team-member-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -220,31 +234,11 @@
     color: #434455;
 }
 
-.footer {
-          background-color: #2e2f42;
-          text-align: center;
+.fourth-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17; 
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    text-decoration: none;
-}
-
-.logo-highlight {
-    color: #f4f4fd;
-}
-
-.footer-description {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--footer-text-color, #F4F4FD);
-}
 .our-portfolio {
     font-size: 36px;
     line-height: 1.11;
@@ -252,6 +246,27 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.app-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    text-align: center;
 }
 
 .item-title {
@@ -260,6 +275,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .item-description {
@@ -275,4 +291,35 @@
 
 .portfolio-list li {
     text-align: center;
+}
+
+.footer {
+    background-color: #2e2f42;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-highlight {
+    color: #f4f4fd;
+}
+
+.footer-description {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-text-color, #F4F4FD);
+    max-width: 264px;
+    margin: 0 auto;
 }
